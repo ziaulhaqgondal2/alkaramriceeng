@@ -1,0 +1,20 @@
+{
+  "entities": {
+    "user": {
+      "title": "User",
+      "description": "User profile with role-based access control",
+      "type": "object",
+      "required": ["uid", "role"],
+      "properties": {
+        "uid": { "type": "string", "description": "Auth UID" },
+        "role": { "type": "string", "description": "User role", "enum": ["admin", "technician", "doctor"] }
+      }
+    }
+  },
+  "firestore": {
+    "users/{userId}": {
+      "schema": "user",
+      "description": "User profiles"
+    }
+  }
+}

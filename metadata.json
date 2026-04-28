@@ -1,0 +1,6 @@
+{
+  "name": "MedLab AI Pro",
+  "description": "Multi-tenant medical laboratory management system powered by AI automation for Pakistan-based labs.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"],
+  "majorCapabilities": ["ai-automation", "lab-management", "multi-tenant-saas"]
+}
